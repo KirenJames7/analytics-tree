@@ -1,0 +1,114 @@
+/*! GoTop v0.0.3 by @edgaraafelix | (c) 2011, 2015 Onwi. | https://github.com/edgaraafelix/jquery-gotop | Licensed under MIT (https://github.com/edgaraafelix/jquery-gotop/blob/master/LICENSE) */
+
+.go-top {
+
+  z-index: 9999;
+
+  visibility: hidden;
+
+  padding: 20px 17px;
+  background-color: #333333;
+  -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+          border-radius: 25px;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+     -moz-opacity: 0;
+          opacity: 0;
+
+  cursor: pointer;
+
+}
+
+.go-top .up {
+
+  width: 0;
+  height: 0;
+
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ffffff;
+
+}
+
+.go-top.visible {
+
+  visibility: visible;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+     -moz-opacity: 0.5;
+          opacity: 0.5;
+
+}
+
+.go-top.hidden { visibility: hidden; }
+
+.go-top.fade-in {
+  border-radius: 25px;
+  visibility: visible;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+     -moz-opacity: 0.5;
+          opacity: 0.5;
+
+  -webkit-transition: visibility 0.5s linear, opacity 0.5s linear;
+     -moz-transition: visibility 0.5s linear, opacity 0.5s linear;
+          transition: visibility 0.5s linear, opacity 0.5s linear;
+
+}
+
+.go-top.fade-out {
+
+  visibility: hidden;
+
+  -webkit-transition: visibility 0.5s linear, opacity 0.5s linear;;
+     -moz-transition: visibility 0.5s linear, opacity 0.5s linear;;
+          transition: visibility 0.5s linear, opacity 0.5s linear;;
+
+}
+
+.top-left,
+.top-middle,
+.top-right,
+.bottom-left,
+.bottom-middle,
+.bottom-right {
+  position: fixed;
+}
+
+
+.top-left {
+  top: 15px;
+  left: 15px;
+}
+
+.top-middle {
+  top: 15px;
+  left: 50%;
+}
+
+.top-right {
+  top: 15px;
+  right: 15px;
+}
+
+.bottom-left {
+  bottom: 15px;
+  left: 15px;
+}
+
+.bottom-middle {
+  bottom: 15px;
+  left: 50%;
+}
+
+.bottom-right {
+  bottom: 15px;
+  right: 15px;
+}
